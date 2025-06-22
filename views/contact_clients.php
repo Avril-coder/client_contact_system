@@ -4,9 +4,13 @@
 <html>
 <head>
     <title>Contact's Clients</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="../public/assets/style.css">
+
 </head>
 <body>
+    <button id="themeToggle" style="float:right; margin: 10px;">🌓 Switch Theme</button>
+
+     <?php include __DIR__ . '/navbar.php'; ?>
     <?php
     if (isset($_GET['contact_id'])) {
         $contact_id = intval($_GET['contact_id']);
@@ -50,5 +54,6 @@
     <?php } else {
         echo "<p>Contact not specified.</p>";
     } ?>
+  <script src="../js/theme-toggle.js"></script>
 </body>
 </html>

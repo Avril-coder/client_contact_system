@@ -1,0 +1,195 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, table, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa;
+    padding: 40px;
+    color: #333;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form styles */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+th {
+    background-color: #ecf0f1;
+}
+
+/* Success / Error messages */
+p[style*='green'] {
+    color: green;
+    margin-bottom: 15px;
+}
+
+p[style*='red'] {
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #3498db; /* updated */
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #2980b9; /* updated hover */
+}
+
+/* Active nav item */
+.navbar ul li a.active {
+    background-color: #1d6fa5;
+    font-weight: bold;
+}
+/* === Dark Theme Support === */
+body.dark-theme {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+body.dark-theme h2 {
+    color: #f9f9f9;
+}
+
+body.dark-theme form,
+body.dark-theme table {
+    background-color: #2b2b2b;
+    color: #f0f0f0;
+}
+
+body.dark-theme input[type="text"],
+body.dark-theme input[type="email"],
+body.dark-theme select {
+    background-color: #3a3a3a;
+    color: #f0f0f0;
+    border: 1px solid #555;
+}
+
+body.dark-theme button {
+    background-color: #555;
+    color: white;
+}
+
+body.dark-theme button:hover {
+    background-color: #777;
+}
+
+body.dark-theme th {
+    background-color: #3a3a3a;
+    color: #f0f0f0;
+}
+
+body.dark-theme td {
+    color: #f0f0f0;
+}
+
+body.dark-theme a {
+    color: #81cfff;
+}
+
+body.dark-theme .navbar {
+    background-color: #2d3e50;
+}
+
+body.dark-theme .navbar ul li a:hover {
+    background-color: #3e5870;
+}
+
+body.dark-theme .navbar ul li a.active {
+    background-color: #567089;
+}
