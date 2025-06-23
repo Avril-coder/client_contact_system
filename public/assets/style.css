@@ -49,6 +49,7 @@ input[type="text"],
 input[type="email"],
 select {
     width: 100%;
+    box-sizing: border-box; 
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
@@ -192,4 +193,20 @@ body.dark-theme .navbar ul li a:hover {
 
 body.dark-theme .navbar ul li a.active {
     background-color: #567089;
+}
+body.index {
+    background-image: url('../assets/binary city.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 40px;
+    color: #333;
+}
+
+body.index.dark-theme {
+    background-color: #1e1e1e;
+    background-blend-mode: multiply;
+    color: #f0f0f0;
 }

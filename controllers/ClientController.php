@@ -10,10 +10,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $client->generateCode(); // This sets $client->code
 
     if ($client->create()) {
-        header('Location: ../views/client_list.php');
-        exit;
+    header('Location: ../views/client_list.php?success=created');
+    exit;
+}
     } else {
         $error = "Failed to create client.";
         // You can redirect back or pass this message into a session later
     }
-}
+

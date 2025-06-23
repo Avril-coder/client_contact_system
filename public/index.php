@@ -4,20 +4,19 @@
     <title>Client-Contact System</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body class="index">
     <button id="themeToggle" style="float: right; margin: 10px;">🌓 Switch Theme</button>
 
     <h2>Welcome to the Client-Contact System</h2>
     <?php include '../views/navbar.php'; ?>
 
-    
-    <ul>
-        <li><a href="../views/client_form.php">Add Client</a></li>
-        <li><a href="../views/contact_form.php">Add Contact</a></li>
-        <li><a href="../views/link_contact.php">Link Contact to Client</a></li>
-        <li><a href="../views/client_list.php">View All Clients</a></li>
-        <li><a href="../views/contact_list.php">View All Contacts</a></li>
-    </ul>
-   <script src="../js/theme-toggle.js"></script>
+    <section style="margin-top: 30px;">
+        <h3>About This System</h3>
+        <p>This application helps you efficiently manage clients and their contacts. You can add new clients and contacts, link contacts to clients, and view all your records seamlessly.</p>
+        <p>Use the navigation bar above to get started!</p>
+    </section>
+
+    <script src="../js/theme-toggle.js"></script>
 </body>
 </html>
+

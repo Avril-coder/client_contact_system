@@ -7,6 +7,15 @@ document.addEventListener("DOMContentLoaded", () => {
     emailInput.addEventListener("input", () => {
         const email = emailInput.value.trim();
         if (email.length < 5) return;
+        const allowedDomains = ['gmail.com', 'yahoo.com'];
+const emailParts = email.split('@');
+
+if (emailParts.length !== 2 || !allowedDomains.includes(emailParts[1].toLowerCase())) {
+    messageDiv.innerHTML = "<p style='color: red;'>Only Gmail and Yahoo emails are allowed.</p>";
+    emailInput.setCustomValidity("Only Gmail and Yahoo emails are allowed.");
+    return;
+}
+
 
         fetch(`../controllers/check_email.php?email=${encodeURIComponent(email)}`)
             .then(res => res.json())

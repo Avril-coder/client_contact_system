@@ -23,7 +23,7 @@ class ContactController {
             $this->contact->email = htmlspecialchars($postData['email']);
 
             if ($this->contact->create()) {
-                header("Location: ../views/contact_list.php?success=1");
+                header("Location: ../views/contact_list.php?success=created");
                 exit;
             } else {
                 header("Location: ../views/contact_list.php?error=1");
