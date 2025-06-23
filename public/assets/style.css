@@ -210,3 +210,33 @@ body.index.dark-theme {
     background-blend-mode: multiply;
     color: #f0f0f0;
 }
+body.home-page {
+    color: white;
+}
+
+body.home-page h1,
+body.home-page h2,
+body.home-page h3,
+body.home-page p,
+body.home-page a {
+    color: white;
+}
+
+body.home-page a:hover {
+    color: #ddd;
+}
+body.index {
+  color: white;
+}
+
+body.index h1,
+body.index h2,
+body.index h3,
+body.index p,
+body.index a {
+  color: white;
+}
+
+body.index a:hover {
+  color: #ddd;
+}
