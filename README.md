@@ -17,10 +17,6 @@ Server-side and client-side form validation
 Theme toggle (Light/Dark mode)
 
 
-Open your browser and navigate to:
-
-http://localhost/client_contact_system/public/
-
 Validation & Requirements Covered
 OOP structure
 
@@ -31,7 +27,35 @@ Server-side validation (required fields, unique emails, client codes)
 Client-side validation using HTML5
 
 
-📌 Notes
+Notes
 No frameworks were used (per assessment rules)
 
 Email addresses and client codes are unique
+
+
+
+Setup & Running the Project
+
+XAMPP or similar local web server 
+Steps to Run It:
+
+Install XAMPP
+
+Start Apache and MySQL from the XAMPP control panel.
+
+Create the Database
+
+Open http://localhost/phpmyadmin
+
+Create a new database named:
+
+client_contact_db
+
+Open config/Database.php
+
+Ensure the username and password match your MySQL setup:
+
+Open your browser and navigate to:
+
+http://localhost/client_contact_system/public/
+
